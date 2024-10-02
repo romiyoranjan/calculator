@@ -4,27 +4,55 @@
     <title>Calculator</title>
     <style>
         #calculator{
-            border: 1px solid rgb(187, 204, 200);
-            border-radius: 5px;
-            width: 200px;
+            border: 2px solid rgb(200, 200, 200);
+            border-radius: 10px;
+            width: 210px;
+            background-color: #f0f0f0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         #display{
-            margin: 10px;
-            width: 85%;
-            font-size: 25px;
+            margin: 15px;
+            width: 73%;
+            font-size: 30px;
+            text-align: right;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            color: #333333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .button-container{
-            display:flex;
+            display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
 
         .button{
-            width: 45px;
-            height: 45px;
-            margin: 3px;
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:nth-child(4n+1) { background-color: #ff9999; } /* red */
+        .button:nth-child(4n+2) { background-color: #99ccff; } /* blue */
+        .button:nth-child(4n+3) { background-color: #99ff99; } /* green */
+        .button:nth-child(4n+4) { background-color: #ffcc99; } /* orange */
+
+        .button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .button:nth-last-child(4) {
+            background-color: #ffcc00;
         }
     </style>
 </head>
